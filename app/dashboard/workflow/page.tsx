@@ -318,7 +318,9 @@ export default function WorkflowPage() {
                             <DropdownMenuItem
                               onClick={e => {
                                 e.stopPropagation();
-                                toast.info("Run functionality coming soon");
+                                router.push(`/dashboard/workflow/
+                                  ${workflow.id}`
+                                );
                               }}
                             >
                               <Play className="mr-2 h-4 w-4" />
