@@ -318,8 +318,8 @@ export default function WorkflowPage() {
                             <DropdownMenuItem
                               onClick={e => {
                                 e.stopPropagation();
-                                router.push(`/dashboard/workflow/
-                                  ${workflow.id}`
+                                router.push(
+                                  `/dashboard/workflow/${workflow.id}`
                                 );
                               }}
                             >
